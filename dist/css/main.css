@@ -5,15 +5,15 @@
 
 h2 {
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 18px;
   margin-bottom: 0px;
   color: #172b4d; }
 
 .line {
-  width: 230px;
+  width: 220px;
   height: 0.8px;
-  margin: 10px 0 18px 5px;
+  margin: 10px 0 18px 14.6px;
   border: 0.8px solid #e5ebef; }
 
 .rectangle {
@@ -43,8 +43,8 @@ h2 {
   color: #172b4d; }
 
 .font-subtitle {
-  font-size: 12px;
-  font-weight: bold;
+  font-size: 14px;
+  padding: 7px 0;
   color: #172b4d; }
 
 * {
@@ -54,7 +54,7 @@ h2 {
 
 html,
 body {
-  font-size: 1rem;
+  font-size: 14px;
   font-family: "Lato", sans-serif;
   color: #333;
   background: #fafdff; }
@@ -69,118 +69,115 @@ li {
 
 .layout {
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  grid-gap: 3.5rem; }
+  grid-template-columns: 1fr 3fr 1.1fr;
+  grid-gap: 2.8rem; }
 
 .container {
-  height: 1394px;
+  height: 100%;
   background: #fafdff;
-  margin: 2rem 3rem 0 3rem; }
+  margin: 2rem 2rem 0 2rem; }
 
 #section-left {
-  max-width: 258px;
+  width: 100%;
   height: 717px; }
   #section-left .features-box {
     display: inline-block; }
     #section-left .features-box .label-search {
-      width: 258px;
-      height: 38px;
+      width: 235px;
+      height: 35px;
       border: solid 1px #cddbe3;
       border-radius: 3px;
       background-color: #fff;
-      margin: 30px 0 30px;
+      margin: 20px 0 20px;
       padding: 14px 0 9.5px 15px;
       outline: none; }
       #section-left .features-box .label-search::placeholder {
         font-size: 14px;
         line-height: 55px;
         color: #a1a8cc; }
-    #section-left .features-box .content {
-      display: flex; }
-      #section-left .features-box .content .pointer i {
-        font-size: 8px;
-        line-height: 5.2px;
+    #section-left .features-box .content .pointer a {
+      display: flex;
+      align-items: center; }
+      #section-left .features-box .content .pointer a i {
+        font-size: 7px;
         width: 9px;
         height: 5.2px;
-        margin: 6.8px 9.7px 18.6px 0;
         color: #172b4d; }
-      #section-left .features-box .content .right-content {
-        margin-top: 7px; }
-      #section-left .features-box .content .font-features {
-        margin-left: 5px; }
+    #section-left .features-box .content .right-content {
+      margin-top: 7px; }
+    #section-left .features-box .content .font-features {
+      margin-left: 5px; }
     #section-left .features-box .db {
       display: flex;
-      font-size: 12px;
+      font-size: 14px;
       font-weight: bold;
       line-height: 1.29;
-      margin: 0px 0 20px 23.8px; }
+      padding: 10px 12px; }
     #section-left .features-box ul li {
       display: flex;
       font-size: 12px;
       line-height: 1.29;
       color: #172b4d;
-      margin: 0px 0 20px 23.8px; }
-    #section-left .features-box .content-under {
-      display: flex; }
-      #section-left .features-box .content-under .pointer i {
-        font-size: 8px;
-        line-height: 5.2px;
-        width: 9px;
-        height: 5.2px;
-        margin: 6.8px 9.7px 18.6px 0;
-        color: #172b4d; }
-      #section-left .features-box .content-under .right-content {
-        margin-top: 7px; }
-      #section-left .features-box .content-under .font-features {
-        color: #172b4d;
-        margin-left: 5px; }
+      padding: 10px 12px; }
+    #section-left .features-box .typical-content {
+      margin-top: 10px; }
+      #section-left .features-box .typical-content .worktracking {
+        margin-top: 20px; }
+      #section-left .features-box .typical-content .inside-typical-content {
+        display: flex;
+        align-items: center; }
+        #section-left .features-box .typical-content .inside-typical-content .pointer a {
+          display: flex;
+          align-items: center; }
+          #section-left .features-box .typical-content .inside-typical-content .pointer a i {
+            font-size: 7px;
+            width: 9px;
+            height: 5.2px;
+            color: #172b4d; }
+        #section-left .features-box .typical-content .inside-typical-content .typical-content-right .font-features {
+          color: #172b4d;
+          margin-left: 5px; }
+      #section-left .features-box .typical-content .outside-typical-content {
+        display: flex;
+        justify-content: center; }
+  #section-left .trending-topics-box h2 {
+    padding: 30px 0; }
   #section-left .trending-topics-box .trending-group .group {
     display: flex;
     align-items: center; }
     #section-left .trending-topics-box .trending-group .group .group-title {
       font-size: 14px;
       color: #172b4d;
-      font-weight: bold;
-      line-height: 21px; }
+      font-weight: bold; }
     #section-left .trending-topics-box .trending-group .group .group-subtitle {
       font-size: 12px;
       color: #6b778c;
       line-height: 19px;
-      margin-top: 6px; }
-  #section-left .trending-topics-box .trending-group div:first-child .group-block {
-    margin-bottom: 16.5px; }
+      margin-top: 10px; }
   #section-left .trending-topics-box .trending-group .group-block {
     display: flex;
     flex-direction: column;
-    margin-top: 18px; }
+    margin-top: 20px; }
 
 #section-middle .header {
   display: flex;
   flex-direction: column; }
-  #section-middle .header h2 {
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 18px;
-    margin-bottom: 0px;
-    color: #172b4d; }
   #section-middle .header ul {
     display: flex; }
     #section-middle .header ul li {
       font-size: 14px;
-      font-weight: 600;
       line-height: 30px;
       color: #6b778c;
       margin-right: 5px; }
       #section-middle .header ul li a {
         font-size: 14px;
-        font-weight: 600;
         line-height: 30px;
         color: #6b778c;
         margin-right: 3px; }
   #section-middle .header .font-features {
-    margin-top: 25px; }
+    margin: 15px 0 5px 0; }
   #section-middle .header div:last-child {
-    margin: 7px 0 20px 0;
+    margin-bottom: 5px;
     line-height: 19px;
     color: #6b778c; }
 
@@ -227,13 +224,6 @@ li {
       justify-content: space-between;
       flex: 1;
       width: 100%; }
-      #section-middle .articles .article1 .article-right .content-above .font-subtitle,
-      #section-middle .articles .article2 .article-right .content-above .font-subtitle,
-      #section-middle .articles .article3 .article-right .content-above .font-subtitle,
-      #section-middle .articles .article4 .article-right .content-above .font-subtitle,
-      #section-middle .articles .article5 .article-right .content-above .font-subtitle,
-      #section-middle .articles .article6 .article-right .content-above .font-subtitle {
-        margin-top: 7px; }
       #section-middle .articles .article1 .article-right .content-above .font-features,
       #section-middle .articles .article2 .article-right .content-above .font-features,
       #section-middle .articles .article3 .article-right .content-above .font-features,
@@ -319,7 +309,6 @@ li {
           margin-right: 10px;
           font-size: 12px;
           line-height: 18px;
-          font-weight: 600;
           color: #6b778c;
           cursor: pointer; }
           #section-middle .articles .article1 .article-right .content-under .group2 .group2-icon i,
@@ -371,7 +360,6 @@ li {
           margin-right: 10px;
           font-size: 10px;
           line-height: 18px;
-          font-weight: 600;
           color: #6b778c;
           cursor: pointer; }
           #section-right .mv-articles .article1 .article-right .content-under .group1 .group1-icon i {
@@ -429,7 +417,6 @@ li {
           margin-right: 10px;
           font-size: 10px;
           line-height: 18px;
-          font-weight: 600;
           color: #6b778c;
           cursor: pointer; }
           #section-right .mv-articles .article2 .article-right .content-under .group1 .group1-icon i,
@@ -450,23 +437,24 @@ li {
           font-size: 0.8rem; }
 
 #section-right .hashtag-box h2 {
-  margin: 30px 0; }
+  margin: 30px 0 20px 0; }
 
 #section-right .hashtag-box .hashtag-content div:first-child {
   background: #f5f6f8;
   border-radius: 3px;
   margin-left: -15px;
-  padding: 3px 15px; }
+  padding: 8px 15px 4px 15px; }
   #section-right .hashtag-box .hashtag-content div:first-child .group-subtitle {
+    margin: 5px 0;
     font-size: 12px;
     color: #6b778c; }
 
 #section-right .hashtag-box .hashtag-content .hashtag-group {
-  margin: 7px 0 7px; }
+  margin: 17px 0 17px; }
   #section-right .hashtag-box .hashtag-content .hashtag-group .group-subtitle {
     font-size: 12px;
     line-height: 15px;
-    margin: 7px 0;
+    margin: 5px 0;
     color: #6b778c; }
 
 #section-right .best-contribution-box h2 {

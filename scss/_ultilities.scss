@@ -10,16 +10,16 @@ $third-color: #6b778c;
 
 h2 {
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 18px;
     margin-bottom: 0px;
     color: $secondary-color;
 }
 
 .line {
-    width: 230px;
+    width: 220px;
     height: 0.8px;
-    margin: 10px 0 18px 5px;
+    margin: 10px 0 18px 14.6px;
     border: 0.8px solid #e5ebef;
 }
 
@@ -40,7 +40,6 @@ h2 {
         height: 2.4px;
         background-color: #42526e;
         border-radius: 50%;
-
     }
 }
 
@@ -59,7 +58,7 @@ h2 {
 }
 
 .font-subtitle {
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 14px;
+    padding: 7px 0;
     color: $secondary-color;
 }

@@ -8,7 +8,7 @@
 
 html,
 body {
-    font-size: 1rem;
+    font-size: 14px;
     font-family: "Lato", sans-serif;
     color: #333;
     background: #fafdff;
@@ -26,20 +26,20 @@ li {
 
 .layout {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-gap: 3.5rem;
+    grid-template-columns: 1fr 3fr 1.1fr;
+    grid-gap: 2.8rem;
 }
 
 .container {
     // width: 1920px;
-    height: 1394px;
+    height: 100%;
     background: #fafdff;
-    margin: 2rem 3rem 0 3rem;
+    margin: 2rem 2rem 0 2rem;
 }
 
 #section-left {
     // position: relative;
-    max-width: 258px;
+    width: 100%;
     height: 717px;
 
 
@@ -47,12 +47,12 @@ li {
         display: inline-block;
 
         & .label-search {
-            width: 258px;
-            height: 38px;
+            width: 235px;
+            height: 35px;
             border: solid 1px #cddbe3;
             border-radius: 3px;
             background-color: #fff;
-            margin: 30px 0 30px;
+            margin: 20px 0 20px;
             padding: 14px 0 9.5px 15px;
             outline: none;
 
@@ -64,17 +64,19 @@ li {
         }
 
         & .content {
-            display: flex;
 
             & .pointer {
-                & i {
-                    // display: inline-block;
-                    font-size: 8px;
-                    line-height: 5.2px;
-                    width: 9px;
-                    height: 5.2px;
-                    margin: 6.8px 9.7px 18.6px 0;
-                    color: #172b4d;
+
+                & a {
+                    display: flex;
+                    align-items: center;
+
+                    & i {
+                        font-size: 7px;
+                        width: 9px;
+                        height: 5.2px;
+                        color: #172b4d;
+                    }
                 }
             }
 
@@ -89,10 +91,10 @@ li {
 
         & .db {
             display: flex;
-            font-size: 12px;
+            font-size: 14px;
             font-weight: bold;
             line-height: 1.29;
-            margin: 0px 0 20px 23.8px;
+            padding: 10px 12px;
         }
 
         & ul li {
@@ -100,37 +102,58 @@ li {
             font-size: 12px;
             line-height: 1.29;
             color: $secondary-color;
-            margin: 0px 0 20px 23.8px;
+            padding: 10px 12px;
+
+
         }
 
-        & .content-under {
-            display: flex;
+        & .typical-content {
+            margin-top: 10px;
 
-            & .pointer {
-                & i {
-                    // display: inline-block;
-                    font-size: 8px;
-                    line-height: 5.2px;
-                    width: 9px;
-                    height: 5.2px;
-                    margin: 6.8px 9.7px 18.6px 0;
-                    color: #172b4d;
+            & .worktracking {
+                margin-top: 20px;
+            }
+
+            & .inside-typical-content {
+                display: flex;
+                align-items: center;
+
+                & .pointer {
+
+                    & a {
+                        display: flex;
+                        align-items: center;
+
+                        & i {
+                            // display: inline-block;
+                            font-size: 7px;
+                            width: 9px;
+                            height: 5.2px;
+                            color: #172b4d;
+                        }
+                    }
+                }
+
+                & .typical-content-right {
+                    & .font-features {
+                        color: #172b4d;
+                        margin-left: 5px;
+                    }
                 }
             }
 
-            & .right-content {
-                margin-top: 7px;
-            }
-
-            & .font-features {
-                color: #172b4d;
-                margin-left: 5px;
+            & .outside-typical-content {
+                display: flex;
+                justify-content: center;
             }
         }
     }
 
 
     .trending-topics-box {
+        & h2 {
+            padding: 30px 0;
+        }
 
         .trending-group {
 
@@ -142,28 +165,20 @@ li {
                     font-size: 14px;
                     color: $secondary-color;
                     font-weight: bold;
-                    line-height: 21px;
-
                 }
 
                 & .group-subtitle {
                     font-size: 12px;
                     color: #6b778c;
                     line-height: 19px;
-                    margin-top: 6px;
-                }
-            }
-
-            & div:first-child {
-                & .group-block {
-                    margin-bottom: 16.5px;
+                    margin-top: 10px;
                 }
             }
 
             & .group-block {
                 display: flex;
                 flex-direction: column;
-                margin-top: 18px;
+                margin-top: 20px;
             }
         }
     }
@@ -175,27 +190,17 @@ li {
         display: flex;
         flex-direction: column;
 
-        & h2 {
-            font-size: 16px;
-            font-weight: bold;
-            line-height: 18px;
-            margin-bottom: 0px;
-            color: $secondary-color;
-        }
-
         & ul {
             display: flex;
 
             & li {
                 font-size: 14px;
-                font-weight: 600;
                 line-height: 30px;
                 color: #6b778c;
                 margin-right: 5px;
 
                 & a {
                     font-size: 14px;
-                    font-weight: 600;
                     line-height: 30px;
                     color: #6b778c;
                     margin-right: 3px;
@@ -204,11 +209,11 @@ li {
         }
 
         & .font-features {
-            margin-top: 25px;
+            margin:15px 0 5px 0;
         }
 
         & div:last-child {
-            margin: 7px 0 20px 0;
+            margin-bottom:5px;
             line-height: 19px;
             color: #6b778c;
         }
@@ -253,11 +258,6 @@ li {
                     width: 100%;
 
 
-                    & .font-subtitle {
-                        margin-top: 7px;
-                    }
-
-
                     & .font-features {
                         font-size: 12px;
                         display: inline-block;
@@ -295,7 +295,7 @@ li {
 
                         & .group1-text {
                             display: flex;
-                            margin-left:5px;
+                            margin-left: 5px;
 
                             & div {
                                 font-size: 10px;
@@ -313,7 +313,6 @@ li {
                             margin-right: 10px;
                             font-size: 12px;
                             line-height: 18px;
-                            font-weight: 600;
                             color: #6b778c;
                             cursor: pointer;
 
@@ -388,7 +387,6 @@ li {
                             margin-right: 10px;
                             font-size: 10px;
                             line-height: 18px;
-                            font-weight: 600;
                             color: #6b778c;
                             cursor: pointer;
 
@@ -452,7 +450,6 @@ li {
                             margin-right: 10px;
                             font-size: 10px;
                             line-height: 18px;
-                            font-weight: 600;
                             color: #6b778c;
                             cursor: pointer;
 
@@ -480,7 +477,7 @@ li {
     & .hashtag-box {
 
         & h2 {
-            margin: 30px 0;
+            margin:30px 0 20px 0;
         }
 
         & .hashtag-content {
@@ -489,21 +486,23 @@ li {
                 background: #f5f6f8;
                 border-radius: 3px;
                 margin-left: -15px;
-                padding: 3px 15px;
+                padding:8px 15px 4px 15px;
+
 
                 & .group-subtitle {
+                    margin: 5px 0;
                     font-size: 12px;
                     color: #6b778c;
                 }
             }
 
             & .hashtag-group {
-                margin: 7px 0 7px;
+                margin: 17px 0 17px;
 
                 & .group-subtitle {
                     font-size: 12px;
                     line-height: 15px;
-                    margin: 7px 0;
+                    margin: 5px 0;
                     color: #6b778c;
                 }
             }
@@ -522,7 +521,7 @@ li {
                 display: flex;
                 align-items: center;
                 margin-bottom: 20px;
-                
+
                 & .person-photo {
                     margin-right: 7px;
                     display: flex;
@@ -551,7 +550,7 @@ li {
                     & .person-post {
                         font-size: 14px;
                         line-height: 17px;
-                        color:#6b778c;
+                        color: #6b778c;
                     }
                 }
             }
