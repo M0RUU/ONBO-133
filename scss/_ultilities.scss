@@ -9,23 +9,28 @@ $third-color: #6b778c;
 }
 
 h2 {
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 600;
     line-height: 18px;
     margin-bottom: 0px;
     color: $secondary-color;
 }
 
+.my {
+    margin-top: 4px ;
+}
+
 .line {
-    width: 220px;
+    width: 205px;
     height: 0.8px;
-    margin: 10px 0 18px 14.6px;
-    border: 0.8px solid #e5ebef;
+    margin: 10px 0 10px 10px;
+    border: 0.8px solid #edeff0;
+    opacity: 0.6;
 }
 
 .rectangle {
-    min-width: 43px;
-    height: 43px;
+    width: 35px;
+    height: 35px;
     margin-right: 15px;
     border-radius: 5px;
     background: #e9f2f8;
@@ -45,8 +50,8 @@ h2 {
 
 
 .font-features {
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 12.8px;
+    font-weight: 600;
     line-height: 1.13;
     color: $primary-color;
 }
