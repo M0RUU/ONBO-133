@@ -26,18 +26,19 @@ li {
 
 .layout {
     display: grid;
-    grid-template-columns: 1fr 4fr 1.2fr;
-    grid-gap: 3.8rem;
+    grid-template-columns: 1fr 4fr 1.5fr;
+    grid-gap: 3.4rem;
 }
 
 .container {
     // width: 1920px;
     height: 100%;
     background: #fafdff;
-    margin: 2.5rem 6.8rem 0 6.8rem;
+    margin: 2.6rem 5.6rem 0 6.8rem;
 }
 
 #section-left {
+    margin-right: 5px;
 
     .features-box {
         display: inline-block;
@@ -145,36 +146,35 @@ li {
 
     .trending-topics-box {
         & h2 {
-            padding: 25px 0;
+            padding: 25px 0 22px 0;
         }
 
         .trending-group {
 
             & .context {
-                display:flex;
+                display: flex;
                 flex-direction: column;
-                margin-bottom:15px;
+                margin-bottom: 15px;
             }
 
             & .group:first-child {
-                margin-bottom:0;
+                margin-bottom: 0;
             }
 
             & .group {
                 display: flex;
-                margin-bottom:20px;
-                
+                margin-bottom: 20px;
+
 
                 & .group-title {
                     font-size: 12.8px;
                     color: $secondary-color;
                     font-weight: bold;
-                    
-                    
+
                 }
 
                 & .group-subtitle {
-                    font-size: 10.8px;
+                    font-size: 11px;
                     color: #6b778c;
                     margin-top: 7px;
                 }
@@ -197,7 +197,7 @@ li {
 
         & h2 {
             font-size: 14px;
-            
+
         }
 
         & ul {
@@ -231,27 +231,23 @@ li {
     }
 
     & .articles {
+        width: 100%;
 
-        & .article1,
-        .article2,
-        .article3,
-        .article4,
-        .article5,
-        .article6 {
+        & .article1 {
             display: flex;
-            width: 100%;
-            height: 152px;
+            width: 787px;
+            height: 155px;
             border-radius: 5px;
-            margin-top: 15px;
-            padding: 15px;
+            margin-top: 20px;
+            padding: 12px;
             box-shadow: 0 0 6px 0 rgba(29, 88, 166, 0.16);
             background: #fff;
 
 
             & .article-left {
                 & img {
-                    width: 220px;
-                    height: 140px;
+                    width: 245px;
+                    height: 100%;
                     border-radius: 5px;
                 }
             }
@@ -270,7 +266,7 @@ li {
 
 
                     & .font-features {
-                        font-size: 12px;
+                        font-size: 11.4px;
                         display: inline-block;
                     }
 
@@ -309,7 +305,7 @@ li {
                             margin-left: 5px;
 
                             & div {
-                                font-size: 10px;
+                                font-size: 11.8px;
                                 line-height: 18px;
                                 color: #42526e;
                             }
@@ -321,8 +317,8 @@ li {
 
                         & .group2-icon {
                             display: flex;
-                            margin-right: 10px;
-                            font-size: 12px;
+                            margin-right: 11px;
+                            font-size: 11px;
                             line-height: 18px;
                             color: #6b778c;
                             cursor: pointer;
@@ -330,6 +326,118 @@ li {
                             & i {
                                 margin-right: 5px;
                             }
+                        }
+
+                        & .group2-icon:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        & .article2,
+        .article3,
+        .article4,
+        .article5,
+        .article6 {
+            display: flex;
+            width: 787px;
+            height: 155px;
+            border-radius: 5px;
+            margin-top: 15px;
+            padding: 12px;
+            box-shadow: 0 0 6px 0 rgba(29, 88, 166, 0.16);
+            background: #fff;
+
+
+            & .article-left {
+                & img {
+                    width: 245px;
+                    height: 100%;
+                    border-radius: 5px;
+                }
+            }
+
+            & .article-right {
+                margin-left: 15px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                & .content-above {
+                    display: flex;
+                    justify-content: space-between;
+                    flex: 1;
+                    width: 100%;
+
+
+                    & .font-features {
+                        font-size: 11.4px;
+                        display: inline-block;
+                    }
+
+                    & .content-above-right {
+                        line-height: 16px;
+                        margin-left: 8px;
+
+                        & i {
+                            color: #808a9d;
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+
+                & .content-under {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    & .group1 {
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+
+                        & .group1-person {
+
+                            & img {
+                                display: flex;
+                                width: 20px;
+                                border-radius: 50%;
+                            }
+                        }
+
+                        & .group1-text {
+                            display: flex;
+                            margin-left: 5px;
+
+                            & div {
+                                font-size: 11.8px;
+                                line-height: 18px;
+                                color: #42526e;
+                            }
+                        }
+                    }
+
+                    & .group2 {
+                        display: flex;
+
+                        & .group2-icon {
+                            display: flex;
+                            margin-right: 11px;
+                            font-size: 11px;
+                            line-height: 18px;
+                            color: #6b778c;
+                            cursor: pointer;
+
+                            & i {
+                                margin-right: 5px;
+                            }
+                        }
+
+                        & .group2-icon:last-child {
+                            margin-right: 0;
                         }
                     }
                 }
@@ -339,16 +447,16 @@ li {
 
     .article-button {
         width: 100%;
-        height: 47px;
+        height: 40px;
         margin: 30px 0 41px 0;
         padding: 15px 0;
-        border-top: 0.8px solid #e5ebef;
-        border-bottom: 0.8px solid #e5ebef;
+        border-top: 0.2px solid #e5ebef;
+        border-bottom: 0.2px solid #e5ebef;
         display: flex;
         align-items: center;
 
         .inside-button {
-            font-size: 14px;
+            font-size: 11px;
             font-weight: bold;
             color: #172b4d;
             width: 100%;
@@ -358,18 +466,19 @@ li {
 }
 
 #section-right {
+    margin-left: -7px;
 
     & .mv-articles {
 
         & .article1 {
             display: flex;
-            margin-top: 30px;
+            margin-top: 22px;
 
             & .article-left {
 
                 & img {
-                    width: 90px;
-                    height: 90px;
+                    width: 74px;
+                    height: 72px;
                     border-radius: 5px;
 
                 }
@@ -384,6 +493,8 @@ li {
                 & .content-above {
                     display: flex;
                     justify-content: center;
+                    align-items: center;
+                    width: 100%;
                 }
 
                 & .content-under {
@@ -396,9 +507,10 @@ li {
                         & .group1-icon {
                             display: flex;
                             margin-right: 10px;
-                            font-size: 10px;
+                            font-size: 11px;
                             line-height: 18px;
                             color: #6b778c;
+                            opacity: 0.9;
                             cursor: pointer;
 
                             & i {
@@ -425,13 +537,13 @@ li {
         .article4,
         .article5 {
             display: flex;
-            margin-top: 22px;
+            margin-top: 15px;
 
             & .article-left {
 
                 & img {
-                    width: 90px;
-                    height: 90px;
+                    width: 74px;
+                    height: 72px;
                     border-radius: 5px;
 
                 }
@@ -459,9 +571,10 @@ li {
                         & .group1-icon {
                             display: flex;
                             margin-right: 10px;
-                            font-size: 10px;
+                            font-size: 11px;
                             line-height: 18px;
                             color: #6b778c;
+                            opacity: 0.9;
                             cursor: pointer;
 
                             & i {
@@ -488,7 +601,7 @@ li {
     & .hashtag-box {
 
         & h2 {
-            margin: 30px 0 20px 0;
+            margin: 24px 0 17px 0;
         }
 
         & .hashtag-content {
@@ -496,23 +609,22 @@ li {
             & div:first-child {
                 background: #f5f6f8;
                 border-radius: 3px;
-                margin-left: -15px;
-                padding: 8px 15px 4px 15px;
+                margin-left: -7px;
+                padding: 4px 15px 2px 7px;
+                margin-bottom: 3px;
 
 
                 & .group-subtitle {
-                    margin: 5px 0;
-                    font-size: 12px;
+                    margin: 4px 0;
+                    font-size: 11px;
                     color: #6b778c;
                 }
             }
 
             & .hashtag-group {
-                margin: 17px 0 17px;
 
                 & .group-subtitle {
-                    font-size: 12px;
-                    line-height: 15px;
+                    font-size: 11px;
                     margin: 5px 0;
                     color: #6b778c;
                 }
@@ -523,7 +635,7 @@ li {
     & .best-contribution-box {
 
         & h2 {
-            margin: 25px 0;
+            margin: 25px 0 15px 0;
         }
 
         & .contribution-person {
@@ -531,7 +643,7 @@ li {
             & .person {
                 display: flex;
                 align-items: center;
-                margin-bottom: 20px;
+                padding: 3px 0 15px;
 
                 & .person-photo {
                     margin-right: 7px;
@@ -540,8 +652,8 @@ li {
                     cursor: pointer;
 
                     & img {
-                        width: 30px;
-                        height: 30px;
+                        width: 25px;
+                        height: 25px;
                         border-radius: 50%;
                     }
                 }
@@ -551,7 +663,7 @@ li {
                     align-items: center;
 
                     & .person-name {
-                        font-size: 14px;
+                        font-size: 13.2px;
                         font-weight: bold;
                         line-height: 16px;
                         color: #172b4d;
@@ -559,7 +671,7 @@ li {
                     }
 
                     & .person-post {
-                        font-size: 14px;
+                        font-size: 12.8px;
                         line-height: 17px;
                         color: #6b778c;
                     }
