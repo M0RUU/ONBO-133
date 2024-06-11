@@ -100,7 +100,7 @@ li {
     border-radius: 3px;
     background-color: #fff;
     margin: 15px 0 15px;
-    padding: 14px 0 10px 10px;
+    padding: 2px 0 0 10px;
     outline: none; }
     #section-left .features-box .label-search::placeholder {
       font-size: 12px;
@@ -167,7 +167,7 @@ li {
   #section-left .trending-topics-box .trending-group .group-block {
     display: flex;
     flex-direction: column;
-    width: 150px; }
+    flex: 1; }
 
 #section-middle {
   width: 790px; }
@@ -420,8 +420,7 @@ li {
     #section-right .mv-articles .article1 .article-right .content-above {
       display: flex;
       justify-content: center;
-      align-items: center;
-      width: 100%; }
+      flex: 1; }
     #section-right .mv-articles .article1 .article-right .content-under {
       display: flex;
       justify-content: space-between; }
@@ -470,7 +469,8 @@ li {
     #section-right .mv-articles .article4 .article-right .content-above,
     #section-right .mv-articles .article5 .article-right .content-above {
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      flex: 1; }
     #section-right .mv-articles .article2 .article-right .content-under,
     #section-right .mv-articles .article3 .article-right .content-under,
     #section-right .mv-articles .article4 .article-right .content-under,
@@ -566,7 +566,29 @@ li {
     grid-gap: 1rem; }
   .container {
     margin: 2.6rem 1.6rem 0 1.6rem; }
+  .outside-dotted {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .outside-dotted .dotted {
+      width: 2.2px;
+      height: 2.2px;
+      background-color: #42526e;
+      border-radius: 50%; }
   #section-left {
     width: 200px; }
   #section-middle {
-    width: 750px; } }
+    width: 750px; }
+  #section-right .best-contribution-box .contribution-person .outside-dotted {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #section-right .best-contribution-box .contribution-person .outside-dotted .dotted {
+      width: 2.2px;
+      height: 2.2px;
+      background-color: #42526e;
+      border-radius: 50%; } }

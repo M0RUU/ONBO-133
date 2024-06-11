@@ -38,7 +38,7 @@ li {
 
 #section-left {
     width: 225px;
-    margin-right:5px;
+    margin-right: 5px;
 
     .features-box {
 
@@ -49,7 +49,7 @@ li {
             border-radius: 3px;
             background-color: #fff;
             margin: 15px 0 15px;
-            padding: 14px 0 10px 10px;
+            padding: 2px 0 0 10px;
             outline: none;
 
             &::placeholder {
@@ -178,13 +178,13 @@ li {
                     margin-top: 7px;
                 }
 
-                
+
             }
 
             & .group-block {
                 display: flex;
                 flex-direction: column;
-                width: 150px;
+                flex: 1;
             }
         }
     }
@@ -494,8 +494,7 @@ li {
                 & .content-above {
                     display: flex;
                     justify-content: center;
-                    align-items: center;
-                    width: 100%;
+                    flex: 1;
                 }
 
                 & .content-under {
@@ -560,6 +559,7 @@ li {
                 & .content-above {
                     display: flex;
                     justify-content: center;
+                    flex: 1;
                 }
 
                 & .content-under {
@@ -679,7 +679,21 @@ li {
                 }
             }
 
+            // .outside-dotted {
+            //     padding:8px;
+
+            //     & .dotted {
+            //         width: 2.4px;
+            //         height: 2.2px;
+            //         background-color: #42526e;
+            //         border-radius: 50%;
+            //     }
+            // }
         }
+
+
+
+
     }
 }
 
@@ -695,6 +709,22 @@ li {
         margin: 2.6rem 1.6rem 0 1.6rem;
     }
 
+    .outside-dotted {
+        width: 18px;
+        height: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        & .dotted {
+            width: 2.2px;
+            height: 2.2px;
+            background-color: #42526e;
+            border-radius: 50%;
+        }
+    }
+
     #section-left {
         width: 200px;
     }
@@ -703,4 +733,28 @@ li {
         width: 750px;
     }
 
+    #section-right {
+        & .best-contribution-box {
+
+            & .contribution-person {
+
+
+                .outside-dotted {
+                    width: 20px;
+                    height: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+
+                    & .dotted {
+                        width: 2.2px;
+                        height: 2.2px;
+                        background-color: #42526e;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
 }
